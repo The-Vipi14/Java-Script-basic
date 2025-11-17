@@ -97,8 +97,33 @@ array indexing starts from  0
                    0 1 2   3        4 --------- indexing 
 
 
+<=====//  operators //=====>
 
+Operators :  these are the signs that are used to perform the oprations on the operands .
 
+       operands: on which the operation is performed :
+
+       1. Arithmetic Operators :-simple mathematic sign :
+          - + / * % ++ --
+
+       2. Assignemnt Operators :
+            a. Simple Assignment  Operators :(=) this is used to assign the value
+            b.  compound Assignment operator: this is made of combining arithemetic and simple operators ;  += , -+ , /= , *=
+
+        3. Comparison operators : final ans. will be true and false
+            a. loos equality : (==): having same value
+            b. strict equality :(===): having same value and data types
+            c. loos inequality : (!=): not same value
+            d. strict inequality:(!==):not same data types or value
+            e.  grater than equal to : (>=) :
+            f. less than equal to :(<=):
+            g. grater than:(>)
+            h. less than :(<)
+
+        4. Logical Operators :
+            a.  AND :(&&): both condition must be true 
+            b. OR : (||): atleast one condition must be true :
+            c. NOT :(!):inversion : 
 
 
 
