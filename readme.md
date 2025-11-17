@@ -28,7 +28,7 @@ December 1995 : Live script named as java script
     2015: ES6 introduced
 
 
-<=============================== JS start ================================================>
+<================= JS start ============================>
 
 printing statements: 
                     |-document.write("This text will show at viewport directly");
@@ -60,6 +60,44 @@ Variable naming rules:-
     |- can not use same name for two or more variables
 
 We should use cammel case notation to write variable or function name.
+
+
+<==//  Data types //==>
+
+    The Data stored inside the variable will belongs to the perticular type is known as datatype.
+
+Types of Data type:
+
+    |---(i) Primitive data type: 
+                                |- String
+                                |- Number
+                                |- Null
+                                |- Boolean
+                                
+    |---(ii) Non - Primitive data type: 
+                                |- Objects
+                                |- Array
+                                |- function
+
+
+
+🔯✅✅ To findout data type of any value or variable, we have a  method [typeof()] 🔯✅✅ 
+
+
+Objects: We can use multiple types as data inside the object 
+        |- Data stores in [key, value] pairs
+
+
+Array: stores multi kind of data in linear memory location with indexing
+
+array indexing starts from  0 
+
+            arr = [2,3,4,"hello", "sam"]
+                   | | |   |        |
+                   0 1 2   3        4 --------- indexing 
+
+
+
 
 
 
