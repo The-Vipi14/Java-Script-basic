@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="color" id="pick-color">
+
+    <div class="box" style="width: 100px; height: 100px;">
+        
+    </div>
+
+    <input type="text" placeholder="Enter" id="password">
+    <div class="btns" style="width: 200px;
+    background-color: red;
+    position:relative;">
+        <button onclick="hideShow()" id="password" class="show">Show</button>
+    </div>
+
+    <script>
+        const box = document.getElementsByClassName('box');
+        
+        const pass = document.getElementById('password');
+
+        function hideShow() {
+            if (pass.type == "text") {
+                pass.type = "password"
+            } else {
+                pass.type = "text"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
