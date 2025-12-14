@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+
+<body>
+    <h1>
+        Your number : <span id="num"></span>
+    </h1>
+    <h2>
+        Type of numebr: <span id="type"></span>
+    </h2>
+
+    <script>
+        const num = document.getElementById("num");
+        const number = prompt("Enter a number: ");
+        const userNumber = Number(number);
+        
+        num.innerText = userNumber;
+        document.getElementById("type").innerText = (userNumber % 2 == 0) ? "Even number" : "Odd number";
+    </script>
+</body>
+
+</html>

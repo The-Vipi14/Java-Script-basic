@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. hide and show text on button click -->
+
+    <h1 id="text" style="height: 100px; width: 200px; background-color: red;">hello world......</h1>
+    <button id="btn" onclick="hideShow()">hide</button>
+
+    <script>
+        // 1. hide and show text on button click
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let textVal = text.innerText;
+
+        // function hideShow() {
+        //     if (text.innerText.length > 0) {
+        //         text.innerText = ""
+        //     } else {
+        //         text.innerText = textVal;
+        //     }
+        // }
+
+
+
+        function hideShow() {
+            let state = text.style.display === "none";
+            
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>DOM</h1>
+
+  <h1 id="heading">hello world</h1>
+  <!-- hello jabascript -->
+  <button onclick="change()">Click here</button>
+
+  <p id="para"></p>
+
+  <h1 id="name"></h1>
+  <!-- <img id="image" src="https://images.unsplash.com/photo-1764385827473-f897c87aa668?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt=""> -->
+
+  <button onclick="setImage()">set Image</button>
+
+  <br>
+  
+  <div style="justify-self: center;height: 500px;">
+
+    <img id="icon" src="https://cdn-icons-png.flaticon.com/128/14363/14363515.png" alt="">
+    <button onclick="onBlub()">on</button>
+    <button onclick="offBlub()">off</button>
+
+  </div>
+
+
+  <script>
+    // DOM : Document object modal :
+
+    // EvenetListners :  used  to perfome any operation on any dom elements :
+    // onClick, onSumbit , onInput, onMouseHover,
+
+    // *  how to acces the dom elements :
+    //  1.  document.getElementById("")
+
+    // text changing method in js :
+    // .innerHTML
+    // .innerText
+    // .textContent
+
+    function change() {
+      name = "rohan verma";
+
+      // document.getElementById("heading").innerHTML="hello javascript"
+      // document.getElementById("heading").innerText = "hello html";
+      document.getElementById("para").innerText =
+        "hello  DOM this is how to insert the text content in html with js";
+      document.getElementById("name").innerHTML = name;
+      head = document.getElementById("heading")
+
+      head.style.color = "red"
+      head.style.backgroundColor = 'aqua'
+      head.style.fontSize = "30px"
+
+    }
+
+
+    function setImage() {
+
+      image = document.getElementById("image")
+      image.style.height = "300px"
+      image.style.width = "300px"
+      image.style.borderRadius = "50%"
+      image.style.border = "2px solid black"
+
+    }
+
+    //   console.log( true ?"true":"false")
+
+    function onBlub() {
+      document.getElementById("icon").src = "https://cdn-icons-png.flaticon.com/128/18380/18380760.png"
+
+    }
+    function offBlub() {
+      document.getElementById("icon").src = "https://cdn-icons-png.flaticon.com/128/14363/14363515.png"
+    }
+
+
+
+
+    // 1. hide and show text on button click 
+    // 2. change the text of button hide/show text and also hide and text
+    // 3. take the user input in js  and print that even or odd on document
+    // 4. find out the typ of data coming from user input
+    // 5. Minor Project : Create an Image Slider With Style 
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        margin-top: 50px;
+        height: 600px;
+        width: 400px;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid black;
+        justify-self: center;
+        color: white;
+        padding: 10px;
+    }
+
+    .eval-box {
+        height: 80px;
+        width: 100%;
+        background-color: rgb(35, 34, 34);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .eval-box input {
+        height: 40px;
+        width: 360px;
+        border: none;
+        outline: none;
+        text-align: end;
+        padding: 10px 30px;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+    }
+
+    #res {
+        height: 40px;
+        width: 360px;
+        text-align: end;
+        padding: 10px 30px;
+        font-size: 20px;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+    }
+
+    .buttons-box {
+        height: 400px;
+        width: 100%;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    .buttons-box>input {
+        background-color: rgb(102, 97, 97);
+        border: none;
+        height: 78px;
+    }
+
+    .buttons-box>input:active {
+        background-color: rgb(102, 97, 97);
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <div class="main">
+        <h1>Calculator</h1>
+        <div class="eval-box">
+            <input type="text" id="inp" name="userInp" placeholder="">
+            <h1 id="res"></h1>
+        </div>
+        <div class="buttons-box">
+            <input onclick="AC()" type="button" value="AC">
+            <input onclick="del()" type="button" value="DEL">
+            <input onclick="" type="button" value="x^2">
+            <input onclick="updateValue('/')" type="button" value="/">
+            <input onclick="updateValue(9)" type="button" value="9">
+            <input onclick="updateValue(8)" type="button" value="8">
+            <input onclick="updateValue(7)" type="button" value="7">
+            <input onclick="updateValue('+')" type="button" value="+">
+            <input onclick="updateValue(6)" type="button" value="6">
+            <input onclick="updateValue(5)" type="button" value="5">
+            <input onclick="updateValue(4)" type="button" value="4">
+            <input onclick="updateValue('-')" type="button" value="-">
+            <input onclick="updateValue(3)" type="button" value="3">
+            <input onclick="updateValue(2)" type="button" value="2">
+            <input onclick="updateValue(1)" type="button" value="1">
+            <input onclick="updateValue('*')" type="button" value="*">
+            <input onclick="updateValue(0)" type="button" value="0">
+            <input onclick="updateValue('.')" type="button" value=".">
+            <button onclick="result()">=</button>
+        </div>
+    </div>
+    
+    <script>
+        let str = document.getElementById('inp');
+        let inp_val = String(str.value);
+        function updateValue(vl) {
+            let val = String(vl);
+            inp_val += val;
+            str.value = inp_val;
+            console.log(inp_val);
+        }
+        function result() {
+            document.getElementById('res').innerText = eval(inp_val)
+        }
+        let str_lenght = inp_val.length;
+        function del() {
+            let new_str = inp_val.slice(0, str_lenght - 1);
+            inp_val = new_str;
+            str.value = inp_val;
+        }
+        function AC(){
+            inp_val = " ";
+             str.value = inp_val;
+        }
+
+    </script>
+
+</body>
+
+</html>
