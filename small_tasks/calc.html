@@ -21,7 +21,8 @@
         border: 1px solid black;
         justify-self: center;
         color: white;
-        padding: 10px;
+        padding: 20px;
+        border-radius: 20px;
     }
 
     .eval-box {
@@ -69,6 +70,8 @@
         background-color: rgb(102, 97, 97);
         border: none;
         height: 78px;
+        color: azure;
+        font-weight: 500;
     }
 
     .buttons-box>input:active {
@@ -103,6 +106,7 @@
             <input onclick="updateValue(1)" type="button" value="1">
             <input onclick="updateValue('*')" type="button" value="*">
             <input onclick="updateValue(0)" type="button" value="0">
+            <input onclick="updateValue('00')" type="button" value="0">
             <input onclick="updateValue('.')" type="button" value=".">
             <button onclick="result()">=</button>
         </div>
@@ -118,17 +122,19 @@
             console.log(inp_val);
         }
         function result() {
-            document.getElementById('res').innerText = eval(inp_val)
+            document.getElementById('res').innerText = eval(inp_val);
         }
         let str_lenght = inp_val.length;
         function del() {
             let new_str = inp_val.slice(0, str_lenght - 1);
             inp_val = new_str;
             str.value = inp_val;
+             document.getElementById('res').innerText =" "
         }
         function AC(){
             inp_val = " ";
              str.value = inp_val;
+             document.getElementById('res').innerText = " ";
         }
 
     </script>

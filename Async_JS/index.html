@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // console.log("1")
+        // console.log("2")
+        // console.log("3")
+
+        // async function print() {
+        //     console.log("a")
+        //     await console.log("b")
+        //     console.log("c")
+        // }
+        // print();
+        // console.log("4")
+        // console.log("5")
+
+
+        // ############ promise ####################### //
+
+        function promo(check) {
+            return new Promise((res, rej) => {
+                if (check) {
+                    res("promise completed successfully")
+                } else {
+                    rej("error")
+                }
+            })
+        }
+        let pass = (result) => {
+            console.log(result)
+        }
+        let fail = (result) => {
+            console.log(result)
+        }
+        promo(true)
+            .then(pass)
+            .catch(fail)
+
+
+        // reverse the string
+        let str = "hello"
+        let newStr = " ";
+        for (let i = str.length - 1; i >= 0; i--) {
+            newStr += str.charAt(i)
+        }
+        console.log(newStr);
+
+    </script>
+</body>
+
+</html>

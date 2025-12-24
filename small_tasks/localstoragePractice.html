@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input type="text" placeholder="username" id="username">
+    <input type="password" id="password" placeholder="password">
+    <button onclick="storeData()">submit</button>
+    <button onclick="getAll()">all users</button>
+
+    <script>
+        const savedData =JSON.parse(localStorage.getItem("AllUser")) || []
+        function storeData() {
+            const allUser = savedData
+            const username = document.getElementById('username');
+            const password = document.getElementById('password');
+            const newUser = {
+                username: username.value,
+                password: password.value
+            }
+            allUser.push(newUser)
+            console.log(allUser)
+            localStorage.setItem("AllUser", JSON.stringify(allUser))
+        }
+        function getAll() {
+            const data = JSON.parse(localStorage.getItem("AllUser"))
+            console.log(data)
+        }
+    </script>
+</body>
+</html>

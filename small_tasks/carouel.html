@@ -1,0 +1,244 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+
+    #main {
+        width: 500px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        text-align: center;
+    }
+
+    #main img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .buttons {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons button {
+        padding: 10px 25px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .buttons button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <img id="img"
+            src="https://images.unsplash.com/photo-1765873360413-6c79486d1fda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+            alt="">
+        <div class="buttons">
+            <button onclick="left()">left</button>
+            <button onclick="right()">right</button>
+        </div>
+    </div>
+
+
+    <script>
+        const images = [
+            "https://images.unsplash.com/photo-1765873360413-6c79486d1fda?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8",
+
+            "https://images.unsplash.com/photo-1765873360594-74e7962b0f8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8",
+
+            "https://images.unsplash.com/photo-1761839258239-2be2146f1605?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8",
+
+            "https://images.unsplash.com/photo-1765498069278-77afd07c6ec9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D",
+
+            "https://plus.unsplash.com/premium_photo-1749659663181-fadf1f3ed359?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D",
+
+            "https://images.unsplash.com/photo-1764957079188-149010d00e30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyN3x8fGVufDB8fHx8fA%3D%3D",
+
+            "https://images.unsplash.com/photo-1761839257864-c6ccab7238de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D",
+
+            "https://images.unsplash.com/photo-1749703836810-361f30aba87a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D"
+        ]
+
+        let imageIdx = 0;
+        let img = document.getElementById("img");
+
+        function right() {
+            imageIdx = (imageIdx + 1) % images.length
+            img.src = images[imageIdx];
+        }
+        function left() {
+            imageIdx = (imageIdx - 1 + images.length) % images.length
+            img.src = images[imageIdx];
+
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        #main {
+            width: 500px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        /* Slider */
+        .slider {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .slider-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-track img {
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .buttons button {
+            padding: 10px 25px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+
+        <div class="slider">
+            <div class="slider-track" id="sliderTrack"></div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="left()">Left</button>
+            <button onclick="right()">Right</button>
+        </div>
+
+    </div>
+
+    <script>
+        const images = [
+            "https://images.unsplash.com/photo-1765873360413-6c79486d1fda?w=500",
+            "https://images.unsplash.com/photo-1765873360594-74e7962b0f8d?w=500",
+            "https://images.unsplash.com/photo-1761839258239-2be2146f1605?w=500",
+            "https://images.unsplash.com/photo-1765498069278-77afd07c6ec9?w=500",
+            "https://plus.unsplash.com/premium_photo-1749659663181-fadf1f3ed359?w=500",
+            "https://images.unsplash.com/photo-1764957079188-149010d00e30?w=500",
+            "https://images.unsplash.com/photo-1761839257864-c6ccab7238de?w=500",
+            "https://images.unsplash.com/photo-1749703836810-361f30aba87a?w=500"
+        ];
+
+        const sliderTrack = document.getElementById("sliderTrack");
+        let imageIdx = 0;
+
+        // Load images dynamically
+        images.forEach(src => {
+            const img = document.createElement("img");
+            img.src = src;
+            sliderTrack.appendChild(img);
+        });
+
+        function updateSlide() {
+            sliderTrack.style.transform = `translateX(-${imageIdx * 500}px)`;
+        }
+
+        function right() {
+            imageIdx = (imageIdx + 1) % images.length;
+            updateSlide();
+        }
+
+        function left() {
+            imageIdx = (imageIdx - 1 + images.length) % images.length;
+            updateSlide();
+        }
+    </script>
+
+</body>
+</html>

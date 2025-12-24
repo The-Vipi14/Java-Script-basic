@@ -1,0 +1,146 @@
+Easy Level JavaScript Practice Questions
+
+
+Operators
+1. What is an operator in JavaScript?
+2. Write a program to add two numbers.
+3. Use * operator to multiply two numbers.
+4. What is the difference between == and ===?
+5. Use the modulo operator (%) to find the remainder of 10 / 3.
+6. Check if 5 > 2 (true or false?).
+7. Write a program using assignment operator (=).
+8. Use logical AND (&&) in a simple condition.
+9. Use logical OR (||) in a simple condition.
+10. What is the result of !true?
+
+
+Condition
+11. Write an if statement to check if a number is positive.
+12. Write an if-else to check if a number is even or odd.
+13. Write a condition to check if age is above 18.
+14. Use else-if to check grade A, B, C.
+15. Write a switch case for days of the week.
+16. Check if two numbers are equal or not.
+17. Use && inside a condition.
+18. Check if a number is between 10 and 20.
+19. Write a program to check if a string is empty.
+20. Write a switch case for selecting a fruit.
+
+
+Loops
+21. Print numbers from 1 to 10 using a for loop.
+22. Print numbers 10 to 1 (reverse loop).
+23. Print even numbers between 1 and 20.
+24. Print each character of a string using a loop.
+25. Print elements of an array using for loop.
+26. Write a while loop that prints 1 to 5.
+27. Write a do-while loop example.
+28. Sum numbers from 1 to 10 using a loop.
+29. Find the largest number in an array (easy logic).
+30. Count vowels in a string using loop.
+
+
+Functions
+31. Create a function that prints “Hello World”.
+32. Create a function that returns the sum of two numbers.
+33. Write a function that takes a number and prints it.
+34. Write a function to check if a number is even.
+35. Create a function that adds three numbers.
+36. Function to return the square of a number.
+37. Function to find the biggest of two numbers.
+38. Function to convert minutes to seconds.
+39. Function to check if a string contains “a”.
+40. Function to print all array elements.
+
+
+
+
+Fetch API
+41. Write a simple fetch request.
+42. Fetch data from an API and log it.
+43. Fetch only the first 5 items.
+44. Fetch and print only the title of the first post.
+45. Show “Loading…” before fetch and “Done” after fetch.
+46. Handle fetch errors using .catch().
+47. Fetch using async/await.
+48. Print “Success” if API works.
+49. Make a POST request example.
+50. Fetch and display data in console.
+
+
+Timing Functions
+51. Use setTimeout to print “Hello” after 2 seconds.
+52. Use setInterval to print numbers every second.
+53. Stop setInterval using clearInterval.
+54. Show “Start” immediately and “End” after 1 second.
+55. Print 1 to 5 with 1-second delay each.
+56. Explain difference between setTimeout and setInterval.
+57. Minimum delay of setTimeout?
+58. Write a countdown using setInterval.
+59. Use setTimeout in a loop.
+60. Simple alarm message using timing function.
+
+
+Promises
+61. What is a promise?
+62. Create a promise that resolves after 2 seconds.
+63. Write a promise that rejects.
+64. Use .then() to handle a promise.
+65. Use .catch() to handle errors.
+66. Chain two promises.
+67. Convert setTimeout into a promise.
+68. Promise that returns a number.
+69. Promise that returns “Done”.
+70. Promise for checking age > 18.
+
+
+Async Await
+71. Write a simple async function.
+72. Use await to wait for a promise.
+73. async/await example with API fetch.
+74. Handle errors with try/catch.
+75. Convert .then() code to async/await.
+76. Create an async function that returns a value.
+77. Write async function with setTimeout.
+78. Await a promise that resolves with “Hello”.
+79. Load API data using async.
+80. Async example: return two values.
+
+
+Array Methods
+81. Use push() to add an item.
+82. Use pop() to remove last item.
+83. Use shift() to remove first item.
+84. Use unshift() to add item at start.
+85. Use map() to double numbers.
+86. Use filter() to get even numbers.
+87. Use find() to get first even number.
+88. Use includes() to check if array contains a value.
+89. Convert array to string using join().
+90. Find length of an array.
+
+
+String Methods
+91. Find string length.
+92. Convert string to uppercase.
+93. Convert string to lowercase.
+94. Find index of a character.
+95. Slice a string.
+96. Replace a word in a string.
+97. Check if string contains “hello”.
+98. Split a string into array.
+99. Concatenate two strings.
+100. Trim extra spaces.
+
+
+DOM
+101. Select an element by id.
+102. Select an element by class.
+103. Change text using innerText.
+104. Change HTML using innerHTML.
+105. Add styling using JavaScript.
+106. Create a new HTML element.
+107. Add a new list item to ul.
+108. Delete an element from DOM.
+109. Add event listener (click).
+110. Change image source on button click.
