@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <link href="https://fonts.cdnfonts.com/css/digital-7" rel="stylesheet">
+    <style>
+        /* Body Styling */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        /* Digital Watch Container */
+        .digital-watch {
+            /* font-family: 'Digital-7', monospace; */
+            font-family: 'Digital-7 Mono', sans-serif;
+            display: flex;
+            gap: 20px;
+            font-size: 100px;
+            color: #00ff00;
+        }
+
+        /* Separator Styling */
+        .separator {
+            position: relative;
+            top: -10px;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 600px) {
+            .digital-watch {
+                font-size: 60px;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="digital-watch">
+        <div id="hour">00</div>
+        <div class="separator">:</div>
+        <div id="minut">00</div>
+        <div class="separator">:</div>
+        <div id="sec">00</div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const date = new Date();
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            const seconds = String(date.getSeconds()).padStart(2, '0');
+
+            document.getElementById("hour").innerText = hours;
+            document.getElementById("minut").innerText = minutes;
+            document.getElementById("sec").innerText = seconds;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // initialize immediately
+    </script>
+</body>
+
+</html>
