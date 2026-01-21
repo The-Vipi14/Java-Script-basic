@@ -41,6 +41,14 @@ let str = "hello this is js tutorial."
 // console.log(strLen)
 
 
+function getLength(str) {
+  if (str === "") return 0;
+  return 1 + getLength(str.slice(1));
+}
+
+console.log(getLength("Hello")); // 5 
+
+
 
 
 
