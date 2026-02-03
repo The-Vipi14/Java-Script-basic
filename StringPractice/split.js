@@ -1,4 +1,15 @@
-str = "i am vipin."
+str = "i am vipin.";
 
-let newStr = str.split(" ")
-console.log(newStr)
+let newStr = str.split(" ");
+
+console.log(newStr);
+
+
+
+
+
+
+
+
+
+

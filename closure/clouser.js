@@ -10,5 +10,6 @@ let vipin = outer(100000);
 let newAmount = vipin(200000);
 
 newAmount = vipin(500000);
+
 console.log(newAmount);
 

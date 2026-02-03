@@ -1,19 +1,18 @@
-// function add (a){
-//     return (b)=>{
-//         return a + b;
-//     }
-// }
+function add (a){
+    return (b)=>{
+        return a + b;
+    }
+}
 
-// console.log(add(5)(5));
-
-
+console.log(add(5)(5));
 
 
-// (function IIF(){
-//     console.log("hello sir")
-// })()
 
-// Curried logging function
+
+(function IIF(){
+    console.log("hello sir")
+})()
+
 const log = level => message => {
   console.log(`[${level}] ${message}`);
 };

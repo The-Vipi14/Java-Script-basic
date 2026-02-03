@@ -46,11 +46,4 @@ function getLength(str) {
   return 1 + getLength(str.slice(1));
 }
 
-console.log(getLength("Hello")); // 5 
-
-
-
-
-
-
-
+console.log(getLength("Hello")); 
