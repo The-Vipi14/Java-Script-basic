@@ -150,6 +150,34 @@
         // 003
         // 02
         // 1
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+
+        let n = 10;
+        for (let i = 1; i <= n; i+=2) {
+            for (let j = n - i + 1; j > 0; j--) {
+                document.write("-")
+            }
+            for (let j = i; j > 0; j--) {
+                document.write("*");
+            } 
+
+            
+            document.write("<br>");
+
+
+            // for (let j = 0; j < n - i + 1; j++) {
+            //     document.write("-")
+            // }
+            // for (let j = 0; j < i; j--) {
+            //     document.write("*");
+            // } 
+            // document.write("<br>");
+
+        }
+
 
     </script>
 </body>
